@@ -1,23 +1,78 @@
 aid: athletesperformance
+
 name: Athletesperformance
-description: 'Athletesperformance is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+description: Athletesperformance, now part of EXOS, provides human performance coaching, training, and consulting services for athletes and organizations.
+  Their offerings include strength, speed, nutrition, and movement programs, as well as corporate wellness solutions, facility design, and virtual
+  coaching platforms. The company focuses on optimizing performance across sports, education, military, and corporate sectors, leveraging data-driven
+  methods and expert coaching to reduce injury risk and enhance results.
+
 url: https://raw.githubusercontent.com/api-evangelist/athletesperformance/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-26 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-26'
+
 modified: '2026-09-26'
+
 tags:
 - Company
-apis: []
+- HumanPerformance
+- Coaching
+- Wellness
+- Sports
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Hosts
+  url: hosts/athletesperformance-hosts.yml
+- type: Vendors
+  url: vendors/athletesperformance-vendors.yml
+- type: TermsOfService
+  url: https://legal-docs.teamexos.com/terms-of-service?_gl=1*alm51s*_ga*MjA3MTE2ODIzOS4xNzI5MzI2NDU0*_ga_D3D03WYX8T*MTczMDQwNTcxNS4xNy4xLjE3MzA0MDcwODkuMTYuMC4w*_gcl_au*MzU5MTYzNzc3LjE3MjkzMjY0NTg.
+- type: PrivacyPolicy
+  url: https://legal-docs.teamexos.com/privacy-policy?_gl=1*j3dme7*_ga*MjA3MTE2ODIzOS4xNzI5MzI2NDU0*_ga_D3D03WYX8T*MTczMDQwNTcxNS4xNy4xLjE3MzA0MDcwODkuMTYuMC4w*_gcl_au*MzU5MTYzNzc3LjE3MjkzMjY0NTg.
+- type: Newsroom
+  url: https://www.teamexos.com/newsroom
+- type: Leadership
+  url: https://www.teamexos.com/resources/leadership/i-in-team
+- type: GitHubOrganization
+  url: https://github.com/teamexos
+- type: DomainSecurity
+  url: security/athletesperformance-domain-security.yml
 - type: Website
-  url: https://equityzen.com/company/athletesperformance
+  url: https://www.teamexos.com
+
+apis:
+- name: Athletesperformance API
+  description: Athletesperformance provides a human performance coaching platform; API details are not publicly documented.
+  humanURL: https://www.teamexos.com
+  baseURL: null
+  aid: athletesperformance:athletesperformance-api
+
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: No public API documentation or developer program is available for Athletesperformance.
+  evidence:
+  - url: https://api.teamexos.com/openapi.json
+    status: blocked
+  checked: 2026-09-26
+x-enrichment:
+  date: '2026-09-26'
+  status: enriched
+  artifacts_added: 5
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
