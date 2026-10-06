@@ -20,7 +20,7 @@ specificationVersion: '0.20'
 
 created: '2026-09-26'
 
-modified: '2026-09-26'
+modified: '2026-10-06'
 
 tags:
 - Company
@@ -36,6 +36,8 @@ maintainers:
   email: info@apis.io
 
 common:
+- url: https://www.teamexos.com/newsroom/rss.xml
+  type: BlogRSS
 - type: Hosts
   url: hosts/athletesperformance-hosts.yml
 - type: Vendors
